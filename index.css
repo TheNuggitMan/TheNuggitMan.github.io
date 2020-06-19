@@ -1,0 +1,71 @@
+body {
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+}
+    @keyframes opacity{
+  0% {
+     opacity:0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade {
+    height: 100vh;
+    animation: 1s ease-in 0s 1 opacity;
+  }
+
+
+.learnLink {
+  /* position: relative; */
+  /* font-family: 'Raleway', 'Open Sans', sans-serif; */
+  padding: 1rem;
+  margin-left: 1rem;
+  text-decoration: none;
+  background: white;
+  color: red;
+  width: 250px;
+  height: 80px;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+}
+.learnLink:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500%;
+  height: 100%;
+  background: firebrick;
+  color: white;
+  z-index: -1;
+  transform: translateX(calc(-25% - 0px));
+  transition: transform .5s;
+}
+.learnLink:hover::after {
+  transform: translateX(0px);
+}
+
+.learnLink:hover{
+  /* color: white; */
+
+}
+#name{
+  color: firebrick;
+  -webkit-text-stroke: 3px black;
+}
+
+#about{
+  background-color: firebrick;
+}
+
+.profileImg {
+  height: 30vh;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
+}
