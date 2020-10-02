@@ -100,8 +100,9 @@ h2 {
 
 .profileImg {
   margin: 2rem;
+  margin-top: 5rem;
   padding: .75rem;
-  height: 30vh;
+  height: 15vw;
   border-radius: 2rem;
   box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
 }
