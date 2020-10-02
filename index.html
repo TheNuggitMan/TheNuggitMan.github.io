@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <script src="index.js" async></script>
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
-    <link rel="stylesheet" href ="index.css"/>
+    <link rel="stylesheet" href ="css\style.css"/>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width
-    , user-scalable=no,
+    <meta name="viewport" content="width=device-width, user-scalable=no,
         shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
     <title>Lee John Folio</title>
   </head>
@@ -18,21 +16,55 @@
         </h2>
       </div>
     <div class="w-30 tr" >
-      <a href="#about" id="onHover" class="learnLink">Learn More...</a>
+      <a onclick="softScroll()" id="onHover" class="learnLink">Learn More...</a>
     </div>
   </div>
     <section id="about">
       <div>
-          <h2 class="ml6 ma0 f1 lh-title ">About Lee</h2>
+        <br>
+          <h2 class="ml6 ma0 f1 lh-title">About Lee</h2>
           <div class="flex justify-between items-center">
             <img class="profileImg pa3 ma6 ml7" src="img/profilePic.jpg" alt="Picture of Lee"></img>
-      <p class="">I have been self teaching myself HTML and CSS on and off for quite a few years, using W3schools.com mainly. Recently I have begun the Udemy course, "The complete Web Developer course 2020 - Zero to Mastery" which
+      <p class="f3 lh-copy tc pr5">I have been self teaching myself HTML and CSS on and off for quite a few years, using W3schools.com mainly. Recently I have begun the Udemy course, "The complete Web Developer course 2020 - Zero to Mastery" which
       has taught me a great deal and enabled me to customise this website.
       I would confidently say I am a juinor dev in HTML, CSS and JavaScript, with an ongoing interest in React. I confidently use Github, Stackoverflow and various other sources, to complete any project.    </p>
         </div>
   </div>
-
     </section>
+    <br>
+  <section id="projects">
+    <div>
+      <h2 class="ml6 ma0 f1 lh-title">Projects</h2>
+      <h3 class="ml6 ma0 f3 lh-title">Here are my projects so far..</h3>
+      <hr>
+      <br>
+        <div class="projectList flex justify-around" >
+          <a href="https://thenuggitman.github.io/robots/" target="_blank"><img class="projectImg pa1 ma1  " src="img/roboFriends.jpg" alt="Picture of Lee"></img></a>
+          <a href="https://thenuggitman.github.io/background-colour-generator/" target="_blank"><img class="projectImg pa1 ma1  " src="img/backgroundGenerator.jpg" alt="Picture of Lee"></img></a>
+          <a href="https://thenuggitman.github.io/DSandP/" target="_blank"><img class="projectImg pa1 ma1" src="img/DS&P.jpg" alt="Picture of Lee"></img></a>
+        </div>
+        <br>
+    </div>
+  </section>
+  <section id="contact">
+  <h2 class="ml6 ma0 f1 lh-title">Contact Me</h2>
+    <div class="form">
+      <form class="contactForm flex flex-column items-center" action="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Enter Name"><br>
+        <input type="text" name="email" placeholder="Enter Email"><br>
+        <textarea name="message" rows="8" cols="30" placeholder="Enter your message....."></textarea><br>
+        <div data-netlify-recaptcha="true"></div>
+        <input type="submit" name="submit" value="Submit">
+      </form>
+      <br><br><hr>
+  </div>
+</section>
 
+  <footer>
+    <div class="tc f5">
+        <p class="pa2">Lee Wilson &copy 2020</p>
+    </div>
+  </footer>
+<script src="js\master.js" async></script>
 </body>
 </html>

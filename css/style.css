@@ -17,6 +17,11 @@ body {
     animation: 1s ease-in 0s 1 opacity;
   }
 
+a {
+  cursor:pointer;
+}
+
+
 
 .learnLink {
   /* position: relative; */
@@ -68,4 +73,23 @@ body {
   height: 30vh;
   border-radius: 2rem;
   box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
+}
+
+.projectImg {
+  height: 30vh;
+  width: 30vw;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
+}
+
+#contact {
+  background-color: firebrick;
+}
+
+input, textarea {
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus{
+  background-color: lightgrey;
 }
