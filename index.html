@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.cs"/> -->
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="css\smallstyle.css"/>
     <link rel="stylesheet" media="screen and (min-width: 601px)" href ="css\style.css"/>
@@ -9,28 +9,29 @@
     <title>Lee John Folio</title>
   </head>
   <body>
+  <section id="header">
     <div class="fade">
       <div>
         <h2 class="introHead">Hello, my name is <span id="name">Lee John</span>,<br>
         I am a junior web developer.
         </h2>
       </div>
-    <div>
-      <a onclick="softScroll()" id="onHover" class="learnLink">Learn More...</a>
+      <br>
+    <div class ="learnBtn">
+      <button onclick="softScroll()" id="onHover" class="learnLink">Learn More...</button>
     </div>
   </div>
+</section>
     <section id="about">
-      <div>
+      <div class="aboutContainer">
         <br>
           <h1>About Lee</h1>
-          <div class="aboutList">
             <img class="profileImg" src="img/profilePic.jpg" alt="Picture of Lee"></img>
                 <p class="">I have been self teaching myself HTML and CSS on and off for quite a few years, using W3schools.com mainly. Recently I have begun the Udemy course, "The complete Web Developer course 2020 - Zero to Mastery" which
                 has taught me a great deal and enabled me to customise this website.
                 I would confidently say I am a juinor dev in HTML, CSS and JavaScript, with an ongoing interest in React. I confidently use Github, Stackoverflow and various other sources, to complete any project.
               </p>
-        </div>
-  </div>
+            </div>
     </section>
     <br>
   <section id="projects">
