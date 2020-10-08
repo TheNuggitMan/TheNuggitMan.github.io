@@ -17,7 +17,7 @@
       </div>
       <br>
     <div class ="learnBtn">
-      <button onclick="softScroll()" id="onHover" class="learnLink">Learn More...</button>
+      <button onclick="softScroll2(about)" id="onHover" class="learnLink">Learn More...</button>
     </div>
   </div>
 </section>
@@ -25,16 +25,18 @@
       <div class="aboutContainer">
         <br>
           <h1>About Lee</h1>
+          <div class="aboutList">
             <img class="profileImg" src="img/profilePic.jpg" alt="Picture of Lee"></img>
-                <p class="">I have been self teaching myself HTML and CSS on and off for quite a few years, using W3schools.com mainly. Recently I have begun the Udemy course, "The complete Web Developer course 2020 - Zero to Mastery" which
-                has taught me a great deal and enabled me to customise this website.
-                I would confidently say I am a juinor dev in HTML, CSS and JavaScript, with an ongoing interest in React. I confidently use Github, Stackoverflow and various other sources, to complete any project.
+                <p>I have been self teaching myself HTML and CSS on and off for quite a few years, using W3schools.com mainly. I have rencently completed a few online courses
+                  to help bolster my knowledge, enabling me to create the sites in the <span onclick="softScroll2(projects)" class="projectPress">projects</span> section below, including this site.
+                Confident problem solver, google research champion and github savvy. <span onclick="softScroll2(contact)" class="contactPress">Contact</span> me to discuss a project.
               </p>
             </div>
+          </div>
     </section>
     <br>
   <section id="projects">
-    <div>
+    <div class="projectContainer">
       <h1>Projects</h1>
       <h2>Here are my projects so far..</h2>
       <hr>
@@ -63,6 +65,7 @@
 
   <footer>
     <div>
+        <h5 ><span onclick="scrollUp()">Top</span></h5>
         <h4>Lee Wilson &copy 2020</h4>
     </div>
   </footer>

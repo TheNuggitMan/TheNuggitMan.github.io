@@ -14,7 +14,7 @@ body {
   }
 }
 .fade {
-    height: 100vh;
+    height: 80vh;
     animation: 1s ease-in 0s 1 opacity;
   }
 
@@ -40,8 +40,6 @@ h2 {
 }
 
 .learnLink {
-  /* position: relative; */
-  /* font-family: 'Raleway', 'Open Sans', sans-serif; */
   padding: 1rem;
   margin-left: 16rem;
   text-decoration: none;
@@ -60,8 +58,10 @@ h2 {
   position: absolute;
   top: 0;
   right: 0;
-  width: 500%;
-  height: 150%;
+  width: 400vw;
+    /* 500%; */
+  height: 120vh;
+    /* 150%; */
   background: firebrick;
   color: white;
   z-index: -1;
@@ -72,10 +72,6 @@ h2 {
   transform: translateX(0px);
 }
 
-.learnLink:hover{
-  /* color: white; */
-
-}
 #name{
   color: firebrick;
   -webkit-text-stroke: 3px black;
@@ -83,12 +79,16 @@ h2 {
 
 #about{
   background-color: firebrick;
+  height: 80vh;
 }
 
 .aboutList {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
+}
+
+.projectPress, .contactPress {
+  font-weight: bolder;
 }
 
 .introHead {
@@ -100,7 +100,6 @@ h2 {
 
 .profileImg {
   margin: 2rem;
-  margin-top: 5rem;
   padding: .75rem;
   height: 15vw;
   border-radius: 2rem;
