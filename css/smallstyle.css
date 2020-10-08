@@ -1,7 +1,7 @@
 body {
   font-family: 'Raleway', 'Open Sans', sans-serif;
 }
-    @keyframes opacity{
+    /* @keyframes opacity{
   0% {
      opacity:0;
   }
@@ -11,14 +11,14 @@ body {
   100% {
     opacity: 1;
   }
-}
+} */
 .fade {
     height: 100vh;
     animation: 1s ease-in 0s 1 opacity;
   }
 
 .introHead {
-    font-size: 1rem;;
+    font-size: 0.25rem;;
   }
 
 .learnLink{
