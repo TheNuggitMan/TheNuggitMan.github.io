@@ -23,6 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: firebrick;
 }
 
 .fade {
@@ -33,6 +34,12 @@ body {
   }
 
 .aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutList {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,13 +62,16 @@ body {
     text-align: center;
     text-decoration: none;
     background: white;
-    color: red;
+    color: firebrick;
     width: 45vw;
     height: 3rem;
     text-transform: uppercase;
     border: 1px solid currentColor;
     border-radius: 5px;
-  }
+}
+.learnLink:focus {
+  outline: none;
+}
 
 .profileImg {
   margin: 1rem;
@@ -108,6 +118,10 @@ p {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+}
+.foot {
   display: flex;
   flex-direction: column;
   align-items: center;
